@@ -7,7 +7,7 @@ import { lenis } from '../App';
 
 const Booking: FC = () => {
 	return (
-		<section className='booking-section'>
+		<section className='booking-section' data-lenis-snap>
 			<motion.div
 				initial={{ opacity: 0, x: -100 }}
 				whileInView={{ opacity: 1, x: 0 }}

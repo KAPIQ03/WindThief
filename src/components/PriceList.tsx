@@ -49,7 +49,7 @@ const PriceCard = (item: PriceItem) => {
 
 const PriceList: FC = () => {
 	return (
-		<section id='pricing' className='pricing-section'>
+		<section id='pricing' className='pricing-section' data-lenis-snap>
 			<div className='pricing-header'>
 				<h2 className='pricing-title'>Cennik 2026</h2>
 				<div className='pricing-intro'>

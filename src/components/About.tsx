@@ -3,7 +3,7 @@ import './About.css';
 
 const About: FC = () => {
 	return (
-		<section id='about' className='about-section'>
+		<section id='about' className='about-section' data-lenis-snap>
 			<div className='about-container'>
 				<h2 className='about-title'>Pare słów o naszym jachcie</h2>
 				<p className='about-description'>

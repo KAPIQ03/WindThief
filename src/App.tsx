@@ -11,17 +11,31 @@ import Footer from './components/Footer';
 import './App.css';
 import Separation from './components/Separation';
 import { IMAGES } from './constants';
-import Lenis from '@studio-freight/lenis';
+import Lenis from 'lenis';
+import Snap from 'lenis/snap';
+import 'lenis/dist/lenis.css';
 
 export const lenis = new Lenis();
 
-function raf(time: number) {
-	lenis.raf(time);
-	requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
 function App() {
+	useEffect(() => {
+		function raf(time: number) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+
+		const rafId = requestAnimationFrame(raf);
+
+		const snap = new Snap(lenis, {
+			type: 'mandatory',
+		});
+
+		return () => {
+			snap.destroy();
+			cancelAnimationFrame(rafId);
+		};
+	}, []);
+
 	useEffect(() => {
 		const handleAnchorClick = (e: MouseEvent) => {
 			const target = e.target as HTMLElement;
@@ -36,10 +50,7 @@ function App() {
 		};
 
 		document.addEventListener('click', handleAnchorClick);
-
-		return () => {
-			document.removeEventListener('click', handleAnchorClick);
-		};
+		return () => document.removeEventListener('click', handleAnchorClick);
 	}, []);
 
 	return (

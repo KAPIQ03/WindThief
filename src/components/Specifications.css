@@ -57,14 +57,14 @@
 	background-color: var(--bg-primary);
 	display: flex;
 	align-items: start;
-	justify-content: center;
+	justify-content: end;
 	position: relative;
 }
 
 .specs-image {
-	height: 90vh;
+	height: 85vh;
 	position: sticky;
-	top: 5vh;
+	top: 10vh;
 }
 
 @media (max-width: 1024px) {

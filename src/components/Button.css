@@ -24,15 +24,26 @@
 	border: none;
 }
 .btn-primary:hover {
-  background-color: var(--text-primary);
+	background: rgba(243, 243, 243, 0.4);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	color: var(--accent);
+	transform: scale(1.05);
+	outline: 3px solid var(--accent);
 }
 
 .btn-secondary {
 	background-color: transparent;
 	color: var(--accent);
-	border: 3px solid var(--accent);
+	outline: 3px solid var(--accent);
 }
 
 .btn-secondary:hover {
-	background-color: rgba(19, 64, 116, 0.05);
+	background-color: var(--accent);
+	color: var(--white);
+	overflow: hidden;
+	cursor: pointer;
+	border: none;
+	transform: scale(1.1);
+	outline: 0;
 }

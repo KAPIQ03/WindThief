@@ -7,16 +7,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Gallery: FC = () => {
 	const [imageIndex, setImageIndex] = useState(0);
-	const [minus, setMinus] = useState(1);
 	const images = SLIDER_IMAGES;
 
 	const NextImage = () => {
-		setMinus(1);
 		setImageIndex(prevIndex => (prevIndex + 1) % images.length);
 	};
 
 	const PreviousImage = () => {
-		setMinus(-1);
 		setImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
 	};
 
@@ -35,7 +32,7 @@ const Gallery: FC = () => {
 	}, []);
 
 	return (
-		<section id='gallery' className='gallery-section'>
+		<section id='gallery' className='gallery-section' data-lenis-snap>
 			<div className='gallery-header'>
 				<h2 className='gallery-title'>Galeria</h2>
 				<p className='gallery-subtitle'>
@@ -48,7 +45,7 @@ const Gallery: FC = () => {
 					<motion.div
 						key={imageIndex}
 						initial={{ opacity: 0 }}
-						animate={{opacity: 1 }}
+						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.2, ease: 'easeOut' }}
 						className='gallery-image-container'

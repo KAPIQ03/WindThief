@@ -8,14 +8,11 @@ interface SeparationProps {
 const Separation = ({ images }: SeparationProps) => {
 	const ref = useRef<HTMLDivElement>(null);
 
-	// useScroll śledzi, gdzie ten konkretny kontener znajduje się pionowo w oknie (od dołu ekranu "start end" do samej góry "end start")
 	const { scrollYProgress } = useScroll({
 		target: ref,
 		offset: ['start end', 'end start'],
 	});
 
-	// Przeliczamy ten postęp (0-1) na ruch w pikselach lub procentach.
-	// Kiedy przewijamy w dół, obraz zjedzie o 20% w górę i dół okna.
 	const y = useTransform(scrollYProgress, [0, 1], ['-20%', '20%']);
 
 	return (

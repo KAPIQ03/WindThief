@@ -1,12 +1,10 @@
 .gallery-section {
-	padding: 40px 0 0;
+	padding: 10vh 0 0;
 	width: 100%;
-	margin-bottom: 40px;
 }
 
 .gallery-header {
-	padding: 0 10%;
-	margin-bottom: 40px;
+	padding: 0 10% 20px;
 }
 
 .gallery-title {
@@ -14,7 +12,6 @@
 	font-size: 54px;
 	font-weight: 700;
 	color: var(--text-primary);
-	margin-bottom: 10px;
 }
 
 .gallery-subtitle {
@@ -22,12 +19,11 @@
 	font-size: 16px;
 	line-height: 26px;
 	color: var(--text-primary);
-	max-width: 1240px;
 }
 
 .gallery-slider {
 	width: 100%;
-	height: 75vh;
+	height: 65vh;
 	position: relative;
 	overflow: hidden;
 }

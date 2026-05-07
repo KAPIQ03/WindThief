@@ -5,7 +5,7 @@ import { lenis } from '../App';
 
 const Navbar: FC = () => {
 	return (
-		<nav className='navbar'>
+		<nav className='navbar' >
 			<div className='navbar-container'>
 				<ul className='nav-menu'>
 					<li>
@@ -25,7 +25,7 @@ const Navbar: FC = () => {
 					</li>
 					<li>
 						<a href='#faq' className='nav-link'>
-							Q&A
+							FAQ
 						</a>
 					</li>
 				</ul>

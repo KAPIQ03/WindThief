@@ -30,9 +30,9 @@ const FAQ: FC = () => {
 	const [openIndex, setOpenIndex] = useState<number | null>(0);
 
 	return (
-		<section id='faq' className='faq-section'>
+		<section id='faq' className='faq-section' data-lenis-snap>
 			<div className='faq-header'>
-				<h2 className='faq-title'>Q&A</h2>
+				<h2 className='faq-title'>FAQ</h2>
 				<p className='faq-subtitle'>
 					Masz pytania? Dobrze trafiłeś. Zebraliśmy najczęściej zadawane
 					pytania, żeby nic nie stało między Tobą a pierwszym rejsem na

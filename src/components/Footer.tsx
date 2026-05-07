@@ -41,13 +41,13 @@ const Footer: FC = () => {
 								<a href='#about'>O jachcie</a>
 							</li>
 							<li>
-								<a href='#booking'>Rezerwuj</a>
+								<a href='#gallery'>Galeria</a>
 							</li>
 							<li>
 								<a href='#pricing'>Cennik</a>
 							</li>
 							<li>
-								<a href='#gallery'>Galeria</a>
+								<a href='#faq'>FAQ</a>
 							</li>
 						</ul>
 						<h4 className='footer-heading info-heading'>Informacje</h4>
