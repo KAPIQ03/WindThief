@@ -1,0 +1,136 @@
+.pricing-section {
+	padding: 60px 10%;
+	width: 100%;
+}
+
+.pricing-header {
+	margin-bottom: 60px;
+}
+
+.pricing-title {
+	font-family: var(--font-dm-sans);
+	font-size: 54px;
+	font-weight: 700;
+	color: var(--text-primary);
+	margin-bottom: 16px;
+}
+
+.pricing-intro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.pricing-intro p {
+	font-family: var(--font-dm-sans);
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--text-primary);
+}
+
+.pricing-btn {
+	align-self: flex-start;
+	margin-top: 10px;
+}
+
+.price-cards {
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+	margin-bottom: 60px;
+}
+
+.price-card {
+	width: clamp(350px, 500px, 100%);
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px 75px 20px 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 20px;
+	color: var(--white);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	-o-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
+	-webkit-transition: transform 0.3s ease;
+}
+.price-card:hover {
+	transform: scale(1.05) rotate(-3deg);
+  cursor: default;
+}
+
+.price-card-period {
+	font-family: var(--font-dm-sans);
+	font-size: 24px;
+	text-align: center;
+}
+
+.price-card-amount {
+	font-family: var(--font-dm-sans);
+	font-size: 64px;
+	font-weight: 700;
+}
+
+.price-card-footer {
+	width: 100%;
+	/* padding: 20px; */
+}
+
+.price-card-desc {
+	font-family: var(--font-dm-sans);
+	font-size: 16px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.additional-charges {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.charge-title {
+	font-family: var(--font-dm-sans);
+	font-size: 42px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.charge-text {
+	font-family: var(--font-dm-sans);
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.charge-list {
+	list-style: disc;
+	padding-left: 24px;
+	margin-top: 10px;
+}
+
+.charge-list li {
+	font-family: var(--font-dm-sans);
+	font-size: 16px;
+	line-height: 26px;
+}
+
+@media (max-width: 1024px) {
+	.pricing-section {
+		padding: 40px 20px;
+	}
+	.price-cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	.price-card {
+		width: 100%;
+		max-width: 400px;
+	}
+	.charge-title {
+		font-size: 32px;
+	}
+}

@@ -1,0 +1,33 @@
+.about-section {
+	padding: 40px 10% 40px;
+	background-color: transparent;
+}
+
+.about-container {
+	margin: 0 auto;
+}
+
+.about-title {
+	font-family: var(--font-bricolage);
+	font-size: 54px;
+	font-weight: 700;
+	color: var(--text-primary);
+	margin-bottom: 10px;
+}
+
+.about-description {
+	font-family: var(--font-dm-sans);
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--text-primary);
+	max-width: 1240px;
+}
+
+@media (max-width: 1024px) {
+	.about-section {
+		padding: 60px 20px 20px;
+	}
+	.about-title {
+		font-size: 36px;
+	}
+}
