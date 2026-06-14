@@ -33,7 +33,7 @@ const prices = [
 	},
 ];
 
-const PriceCard = ({ item, index }: { item: PriceItem; index: number }) => {
+const PriceCard = ({ item }: { item: PriceItem }) => {
 	return (
 		<div
 			className='price-card'
@@ -84,7 +84,7 @@ const PriceList: FC = () => {
 				viewport={{ once: true, margin: '0px 0px -150px 0px' }}
 				transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}>
 				{prices.map((item, index) => (
-					<PriceCard key={index} item={item} index={index} />
+					<PriceCard key={index} item={item} />
 				))}
 			</motion.div>
 
