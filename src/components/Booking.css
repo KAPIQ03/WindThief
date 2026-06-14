@@ -66,3 +66,12 @@
 		font-size: 36px;
 	}
 }
+@media (max-width: 768px) {
+	.booking-section {
+		flex-direction: column-reverse;
+		margin-bottom: 0;
+	}
+	.booking-image-right {
+		display: none;
+	}
+}

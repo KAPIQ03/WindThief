@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Hero: FC = () => {
 	return (
-		<section className='hero-section' data-lenis-snap>
+		<section className='hero-section' data-lenis-snap id='start'>
 			<motion.div
 				initial={{ opacity: 0, transform: 'scale(0.9)' }}
 				animate={{ opacity: 1, transform: 'scale(1.1)' }}

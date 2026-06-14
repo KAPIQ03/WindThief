@@ -25,10 +25,10 @@ const Footer: FC = () => {
 							<h4 className='social-heading'>Gdzie nas znaleźć?</h4>
 							<div className='social-icons'>
 								<a href='#' className='social-btn'>
-									<img src={ICONS.facebook} alt='Facebook' />
+									<img src={ICONS.facebook} alt='Facebook' loading='lazy' />
 								</a>
 								<a href='#' className='social-btn'>
-									<img src={ICONS.instagram} alt='Instagram' />
+									<img src={ICONS.instagram} alt='Instagram' loading='lazy' />
 								</a>
 							</div>
 						</div>
@@ -37,6 +37,9 @@ const Footer: FC = () => {
 					<div className='footer-column menu-column'>
 						<h4 className='footer-heading'>Menu</h4>
 						<ul className='footer-menu'>
+							<li>
+								<a href='#start'>Start</a>
+							</li>
 							<li>
 								<a href='#about'>O jachcie</a>
 							</li>

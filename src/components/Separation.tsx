@@ -20,7 +20,7 @@ const Separation = ({ images }: SeparationProps) => {
 			ref={ref}
 			style={{
 				width: '100%',
-				height: '450px',
+				height: 'clamp(150px, 300px, 450px)',
 				position: 'relative',
 				overflow: 'hidden',
 				borderTopLeftRadius: '75px',

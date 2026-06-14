@@ -42,8 +42,11 @@ const Gallery: FC = () => {
 			</div>
 			<div className='gallery-slider'>
 				<AnimatePresence mode='wait'>
-					<motion.div
+					<motion.img
 						key={imageIndex}
+						src={images[imageIndex]}
+						alt={`Jacht Cobra 41 Wind Thief - wnętrze i wyposażenie - zdjęcie ${imageIndex + 1}`}
+						loading='lazy'
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
@@ -55,8 +58,8 @@ const Gallery: FC = () => {
 							left: 0,
 							width: '100%',
 							height: '100%',
-							backgroundImage: `url(${images[imageIndex]})`,
-						}}></motion.div>
+							objectFit: 'cover'
+						}} />
 				</AnimatePresence>
 
 				<div className='slider-controls' style={{ zIndex: 10 }}>

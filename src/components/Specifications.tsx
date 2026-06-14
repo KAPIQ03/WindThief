@@ -53,7 +53,7 @@ const Specifications: FC = () => {
 							className={`spec-item spec-${spec.theme}`}
 							initial={{ opacity: 0, x: -100 }}
 							whileInView={{ opacity: 1, x: 0 }}
-							viewport={{ once: true, margin: '-250px' }}
+							viewport={{ once: true, margin: '0px 0px -150px 0px' }}
 							transition={{
 								duration: 0.2,
 								delay: 0.15,
@@ -65,7 +65,7 @@ const Specifications: FC = () => {
 					))}
 				</div>
 				<div className='specs-image-container'>
-					<img src={IMAGES.bloc2} alt='Yacht Plan' className='specs-image' />
+					<img src={IMAGES.bloc2} alt='Yacht Plan' className='specs-image' loading='lazy' />
 				</div>
 			</div>
 		</section>

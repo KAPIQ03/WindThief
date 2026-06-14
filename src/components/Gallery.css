@@ -79,7 +79,7 @@
 
 @media (max-width: 1024px) {
 	.gallery-header {
-		padding: 0 20px;
+		padding: 0 20px 20px;
 	}
 	.gallery-title {
 		font-size: 36px;
@@ -88,11 +88,18 @@
 		height: 400px;
 		padding: 0;
 	}
-	.gallery-image-container {
-		border-radius: 0;
+}
+@media (max-width: 768px) {
+	.gallery-section {
+		padding-top: 80px;
 	}
 	.slider-controls {
-		justify-content: space-around;
-		padding: 20px 0;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 20px;
 	}
+}
+@media (max-width: 480px) {
 }

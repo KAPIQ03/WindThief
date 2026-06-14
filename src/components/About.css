@@ -31,3 +31,8 @@
 		font-size: 36px;
 	}
 }
+@media (max-width: 768px) {
+	.about-section {
+		padding-top: 80px;
+	}
+}

@@ -125,7 +125,6 @@
 	pointer-events: none;
 	z-index: 1;
 	opacity: 1;
-	/* Wymuszenie szerokości na cały ekran, pomijając padding 100px rodzica */
 	width: 100vw;
 	position: relative;
 	left: 50%;
@@ -153,8 +152,10 @@
 
 @media (max-width: 1024px) {
 	.footer-content {
-		padding: 60px 20px 10px;
-		margin-top: 60px;
+		padding: 60px 40px 10px;
+		margin-top: 0;
+		border-top-left-radius: 75px;
+		border-top-right-radius: 75px;
 	}
 	.footer-columns {
 		flex-direction: column;
@@ -168,5 +169,27 @@
 	}
 	.large {
 		display: none;
+	}
+	.footer-column:nth-child(2) {
+		width: 100%;
+		border: 0;
+		padding: 0;
+	}
+	.footer-menu {
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+	.social-media {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 768px) {
+	.footer-content {
+		padding: 40px 35px 10px;
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
 	}
 }

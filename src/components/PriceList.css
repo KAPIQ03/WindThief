@@ -42,7 +42,7 @@
 
 .price-card {
 	width: clamp(350px, 500px, 100%);
-	height: 400px;
+	height: clamp(300px, 350px, 400px);
 	background-size: cover;
 	background-position: center;
 	border-radius: 20px 75px 20px 75px;
@@ -80,7 +80,6 @@
 
 .price-card-footer {
 	width: 100%;
-	/* padding: 20px; */
 }
 
 .price-card-desc {
@@ -123,11 +122,15 @@
 
 @media (max-width: 1024px) {
 	.pricing-section {
-		padding: 40px 20px;
+		padding: 80px 20px;
+	}
+	.pricing-title {
+		font-size: 36px;
 	}
 	.price-cards {
 		flex-direction: column;
 		align-items: center;
+		gap: 36px;
 	}
 	.price-card {
 		width: 100%;
@@ -135,5 +138,8 @@
 	}
 	.charge-title {
 		font-size: 32px;
+	}
+	.pricing-btn {
+		align-self: center;
 	}
 }

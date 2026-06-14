@@ -11,7 +11,7 @@ const Booking: FC = () => {
 			<motion.div
 				initial={{ opacity: 0, x: -100 }}
 				whileInView={{ opacity: 1, x: 0 }}
-				viewport={{ once: true, margin: '-250px' }}
+				viewport={{ once: true, margin: '0px 0px -150px 0px' }}
 				transition={{ duration: 0.5, delay: 0.5, ease: 'easeOut' }}
 				className='booking-image booking-image-left'
 				style={{ backgroundImage: `url(${IMAGES.bloc})` }}></motion.div>
@@ -38,7 +38,7 @@ const Booking: FC = () => {
 			<motion.div
 				initial={{ opacity: 0, x: 100 }}
 				whileInView={{ opacity: 1, x: 0 }}
-				viewport={{ once: true, margin: '-250px' }}
+				viewport={{ once: true, margin: '0px 0px -150px 0px' }}
 				transition={{ duration: 0.5, delay: 0.5, ease: 'easeOut' }}
 				className='booking-image booking-image-right'
 				style={{ backgroundImage: `url(${IMAGES.bloc1})` }}></motion.div>

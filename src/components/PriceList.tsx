@@ -2,6 +2,8 @@ import type { FC } from 'react';
 import { IMAGES } from '../constants';
 import Button from './Button';
 import './PriceList.css';
+import { lenis } from '../App';
+import { motion } from 'framer-motion';
 
 interface PriceItem {
 	period: string;
@@ -31,7 +33,7 @@ const prices = [
 	},
 ];
 
-const PriceCard = (item: PriceItem) => {
+const PriceCard = ({ item, index }: { item: PriceItem; index: number }) => {
 	return (
 		<div
 			className='price-card'
@@ -64,15 +66,27 @@ const PriceList: FC = () => {
 						odpowiemy na wszystkie pytania i pomożemy dobrać odpowiednią ofertę.
 						Szczegóły znajdziesz w sekcji Kontakt.
 					</p>
-					<Button label='Kontakt' type='secondary' className='pricing-btn' />
+					<Button
+						label='Kontakt'
+						type='secondary'
+						className='pricing-btn'
+						onClick={() => {
+							lenis.scrollTo('#contact');
+						}}
+					/>
 				</div>
 			</div>
 
-			<div className='price-cards'>
+			<motion.div
+				className='price-cards'
+				initial={{ opacity: 0, y: 75 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, margin: '0px 0px -150px 0px' }}
+				transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}>
 				{prices.map((item, index) => (
-					<PriceCard key={index} {...item} />
+					<PriceCard key={index} item={item} index={index} />
 				))}
-			</div>
+			</motion.div>
 
 			<div className='additional-charges'>
 				<div className='charge-item'>
