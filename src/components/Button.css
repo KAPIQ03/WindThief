@@ -25,8 +25,8 @@
 }
 .btn-primary:hover {
 	background: rgba(243, 243, 243, 0.4);
-	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
 	color: var(--accent);
 	transform: scale(1.05);
 	outline: 3px solid var(--accent);

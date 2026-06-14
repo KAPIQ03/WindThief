@@ -48,8 +48,8 @@
 	border-radius: 50%;
 	color: #f3f3f3c3;
 	background: rgba(243, 243, 243, 0.4);
-	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
 	border-top: 1px solid rgba(243, 243, 243, 0.4);
 	border-bottom: 1px solid rgba(243, 243, 243, 0.4);
 	transition: all 0.2s;
