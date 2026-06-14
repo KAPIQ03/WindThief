@@ -19,7 +19,6 @@
 	background: rgba(243, 243, 243, 0.4);
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	transform: translateZ(0);
 	border-top: 1px solid rgba(243, 243, 243, 0.4);
 	border-bottom: 1px solid rgba(243, 243, 243, 0.4);
 	border-radius: var(--border-radius-button);
@@ -82,7 +81,6 @@
 	background: rgba(243, 243, 243, 0.4);
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	transform: translateZ(0);
 	border-top: 1px solid rgba(243, 243, 243, 0.4);
 	border-bottom: 1px solid rgba(243, 243, 243, 0.4);
 	border-radius: var(--border-radius-button);
