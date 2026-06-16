@@ -11,15 +11,11 @@ const Footer: FC = () => {
 						<h3 className='footer-heading'>Dane kontaktowe</h3>
 						<ul className='footer-contact-list'>
 							<li>
-								Telefon: [+48 XXX XXX XXX] (Zadzwoń do nas – chętnie opowiemy na
+								Telefon: +48 508 356 757 (Zadzwoń do nas – chętnie opowiemy na
 								wszystkie pytania)
 							</li>
-							<li>E-mail: [biuro@twoja-domena.pl]</li>
-							<li>Port macierzysty: [Nazwa Mariny, np. Marina Gdynia]</li>
-							<li>
-								Social Media: Znajdź nas na [Facebook] i [Instagram] – zobacz
-								Wind Thiefa w akcji!
-							</li>
+							<li>E-mail: kontakt@windthief.pl</li>
+							<li>Port macierzysty: Marina Gdynia</li>
 						</ul>
 						<div className='social-media'>
 							<h4 className='social-heading'>Gdzie nas znaleźć?</h4>
@@ -56,10 +52,9 @@ const Footer: FC = () => {
 						<h4 className='footer-heading info-heading'>Informacje</h4>
 						<ul className='footer-menu'>
 							<li>
-								<a href='#'>Polityka Prywatności</a>
-							</li>
-							<li>
-								<a href='#'>Polityka Cookie</a>
+								<a href='/polityka-prywatnosci.html'>
+									Polityka Prywatności i Cookies
+								</a>
 							</li>
 						</ul>
 					</div>
