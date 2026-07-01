@@ -14,20 +14,20 @@ interface PriceItem {
 
 const prices = [
 	{
-		period: 'kwiecień - maj',
-		price: '7200 zł',
+		period: 'czerwiec i wrzesień',
+		price: '7000 zł',
 		desc: 'Idealny balans między słońcem a silniejszym wiatrem.',
 		img: IMAGES.card,
 	},
 	{
-		period: 'czerwiec - sierpień',
-		price: '8200 zł',
-		desc: 'Pełnia lata, idealny czas na rodzinne wakacje i wakacyjne regaty.',
+		period: 'lipiec i sierpień',
+		price: '8000 zł',
+		desc: 'Pełnia lata, idealny czas na urlop lub wakacyjne regaty.',
 		img: IMAGES.card1,
 	},
 	{
-		period: 'wrzesień - październik',
-		price: '6800 zł',
+		period: 'kwiecień, maj i październik',
+		price: '6500 zł',
 		desc: 'Spokój, brak tłumów i świetne warunki do treningów regatowych.',
 		img: IMAGES.card2,
 	},
@@ -57,23 +57,16 @@ const PriceList: FC = () => {
 				<div className='pricing-intro'>
 					<p>
 						Niezależnie od tego, czy planujesz weekendowy wypad, tygodniowy rejs
-						czarterowy, udział w regatach czy kurs żeglarski — mamy ofertę
-						stworzoną właśnie dla Ciebie. Sprawdź, co przygotowaliśmy i wybierz
-						swój sposób na morze.
+						czarterowy, udział w regatach czy kurs żeglarski - stworzymy ofertę
+						specjalnie dla Ciebie.
 					</p>
 					<p>
-						Gotowy na rejs? Skontaktuj się z nami telefonicznie — chętnie
-						odpowiemy na wszystkie pytania i pomożemy dobrać odpowiednią ofertę.
-						Szczegóły znajdziesz w sekcji Kontakt.
+						<strong>
+							Poniższe ceny podlegają negocjacji, przedstawiają początkową
+							wycenę za tygodniowy rejs - Przewidujemy zniżki dla stałych
+							klientów, oraz last minute.
+						</strong>
 					</p>
-					<Button
-						label='Kontakt'
-						type='secondary'
-						className='pricing-btn'
-						onClick={() => {
-							lenis.scrollTo('#contact');
-						}}
-					/>
 				</div>
 			</div>
 
@@ -88,11 +81,28 @@ const PriceList: FC = () => {
 				))}
 			</motion.div>
 
+			<div className='contact-incentive'>
+				<p>
+					Gotowy na rejs? Skontaktuj się z nami telefonicznie - chętnie
+					odpowiemy na wszystkie pytania i pomożemy dobrać odpowiednią ofertę.
+					Szczegóły znajdziesz w sekcji Kontakt.
+				</p>
+				<div>
+					<Button
+						label='Kontakt'
+						type='secondary'
+						onClick={() => {
+							lenis.scrollTo('#contact');
+						}}
+					/>
+				</div>
+			</div>
+
 			<div className='additional-charges'>
 				<div className='charge-item'>
 					<h3 className='charge-title'>Transit Log</h3>
 					<p className='charge-text'>
-						Każdy czarter obejmuje obowiązkową opłatę serwisową w wysokości{' '}
+						Każdy czarter obejmuje obowiązkową opłatę serwisową w wysokości
 						<strong>450 PLN</strong>, która zawiera:
 					</p>
 					<ul className='charge-list'>
@@ -106,8 +116,7 @@ const PriceList: FC = () => {
 					<h3 className='charge-title'>Kaucja</h3>
 					<p className='charge-text'>
 						Kaucja zwrotna płatna przy przejęciu jachtu wynosi{' '}
-						<strong>4 000 PLN</strong> (gotówka). Istnieje możliwość
-						ubezpieczenia kaucji.
+						<strong>7 000 PLN</strong> (gotówka).
 					</p>
 				</div>
 			</div>

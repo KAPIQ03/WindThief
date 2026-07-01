@@ -8,7 +8,7 @@ const Hero: FC = () => {
 		<section className='hero-section' data-lenis-snap id='start'>
 			<motion.div
 				initial={{ opacity: 0, transform: 'scale(0.9)' }}
-				animate={{ opacity: 1, transform: 'scale(1.1)' }}
+				animate={{ opacity: 1, transform: 'scale(1.0)' }}
 				className='hero-background'
 				style={{
 					backgroundImage: `linear-gradient(rgba(0, 0, 0 ,0) 50%, rgba(0,0,0,0.6)), url(${IMAGES.subtract})`,
@@ -24,9 +24,8 @@ const Hero: FC = () => {
 					</div>
 					<div className='hero-description-container'>
 						<p className='hero-description'>
-							Planujesz wypad z ekipą? Wynajmij łódź w 3 minuty i wypłyń w
-							trasę, którą sam zaplanujesz. Sprawdzone jednostki, przejrzyste
-							ceny i zero ukrytych kosztów.
+							Planujesz rejs? Wynajmij łódź w krótką chwilę i wypłyń w trasę.
+							Sprawdzona jednostka, przejrzyste ceny i zero ukrytych kosztów.
 						</p>
 					</div>
 				</motion.div>

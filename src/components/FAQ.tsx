@@ -10,9 +10,13 @@ const faqs = [
 			'Nasza Cobra 41 to jacht, który mimo swoich osiągów jest przewidywalny i wdzięczny w prowadzeniu. Oczywiście wymaga doświadczenia, ale sterowanie nim to czysta przyjemność.',
 	},
 	{
+		question: 'Czy na jechcie znajduje się pościel?',
+		answer: 'Pościel można wypożyczyć na czas rejsu. Koszt to 80zł za komplet.',
+	},
+	{
 		question: 'Co oznacza "zacięcie regatowe" w praktyce?',
 		answer:
-			'Oznacza to, że jacht jest zoptymalizowany pod kątem prędkości i sprawności żeglarskiej. Posiada lepszej jakości osprzęt, który pozwala na precyzyjne trymowanie żagli.',
+			'Oznacza to, że jacht jest zoptymalizowany pod kątem prędkości i sprawności żeglarskiej. Posiada specjalny kadłub w kwształt trójkąta, który pozwala na osiąganie większych prędkości.',
 	},
 	{
 		question: 'Jak wygląda procedura przekazania jachtu?',
@@ -22,7 +26,7 @@ const faqs = [
 	{
 		question: 'Co muszę zabrać ze sobą na rejs?',
 		answer:
-			'Poza standardowym ekwipunkiem żeglarskim, warto zabrać obuwie z jasną podeszwą, ciepłą odzież oraz dobry humor. Szczegółową listę przesyłamy po dokonaniu rezerwacji.',
+			'Poza standardowym ekwipunkiem żeglarskim, warto zabrać obuwie z jasną podeszwą, ciepłą odzież oraz dobry humor. Szczegółową listę możemy przesłać po dokonaniu rezerwacji.',
 	},
 ];
 

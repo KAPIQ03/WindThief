@@ -19,12 +19,11 @@ const Booking: FC = () => {
 				<h2 className='booking-title'>Już teraz zarezerwuj swój rejs!</h2>
 				<p className='booking-text'>
 					Poczuj, jak Wind Thief kradnie wiatr dla Ciebie. Jeśli szukasz
-					jednostki, która nie tylko oferuje luksusowy wypoczynek, ale też
-					potrafi pokazać pazur na kursach ostrych, nasza Cobra 41 jest wyborem
-					bezkonkurencyjnym. To jacht dla tych, którzy kochają prędkość,
-					precyzyjne prowadzenie i satysfakcję z wyprzedzania innych na trasie.
-					Nie czekaj, aż najlepsze terminy odpłyną w siną dal – zarezerwuj Wind
-					Thiefa już dziś i przejmij stery nad swoimi wymarzonymi wakacjami pod
+					jednostki, która nie tylko oferuje wygodę, ale także potrafi pokazać
+					pazur w trakcie podróży, nasza Cobra 41 jest wyborem
+					bezkonkurencyjnym. To jacht dla tych, którzy kochają prędkość i nie
+					boją się przygód. Nie czekaj, aż terminy odpłyną – zarezerwuj Wind
+					Thief'a już dziś i przejmij stery nad swoimi wymarzonymi wakacjami pod
 					żaglami!
 				</p>
 				<Button

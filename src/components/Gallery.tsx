@@ -37,7 +37,7 @@ const Gallery: FC = () => {
 				<h2 className='gallery-title'>Galeria</h2>
 				<p className='gallery-subtitle'>
 					Słowa nie oddają tego, co czujesz na pokładzie. Przekonaj się sam —
-					zajrzyj do naszej galerii i poczuj ducha Wind Thiefa.
+					zajrzyj do naszej galerii i sprawdź co Wind Thief ma do zaoferowania.
 				</p>
 			</div>
 			<div className='gallery-slider'>
@@ -58,8 +58,9 @@ const Gallery: FC = () => {
 							left: 0,
 							width: '100%',
 							height: '100%',
-							objectFit: 'cover'
-						}} />
+							objectFit: 'cover',
+						}}
+					/>
 				</AnimatePresence>
 
 				<div className='slider-controls' style={{ zIndex: 10 }}>

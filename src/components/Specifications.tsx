@@ -7,37 +7,36 @@ const specData = [
 	{
 		title: 'Dane Techniczne',
 		content:
-			'Ilość osób:  8\nIlość kabin: 3\nIlość koi: 8\nIlość łazienek: 2\nDługość: 12 m\nSzerokość: 3,96 m\nZanurzenie:  1,8 m\nSilnik: 55 HP Volvo Penta\nŻagle: grot, genua\nZbiornik wody: 360 l\nZbiornik paliwa: 210 l\nRok produkcji: 2006',
+			'Ilość osób:  10\nIlość kabin: 4\nIlość koi: 8 + mesa\nIlość łazienek: 1\nDługość: 12,3 m\nSzerokość: 3,95 m\nZanurzenie:  2,4 m\nSilnik: 40 HP Volvo Penta\nŻagle: grot, genua\nZbiornik wody: 190 L\nZbiornik paliwa: 90 L\nRok produkcji: 2016',
 		theme: 'dark',
 	},
 	{
 		title: 'Nawigacja',
 		content:
-			'Chartploter Raymarine Axiom 9\nRadar Raymarine Quantum 2\nChartploter Raymarine A75\nAIS dwukierunkowy\nAntena GSM \nWiatromierz\nLog z echosondą\nRadio VHF Raymarine RAY 53 z DSC \nAutopilot\nLornetka\nNavtex',
+			'Chartploter Raymarine \nAIS dwukierunkowy\nWiatromierz\nLog\nRadio VHF Raymarine \nAutopilot\nLornetka\n',
 		theme: 'light',
 	},
 	{
 		title: 'Pokład',
 		content:
-			'Ploter Raymarine Axiom 9\nSzprycbuda\nKoło sterowe z konsolą\nStół w kokpicie\nSiedziska kokpitu wyłożone drzewem tekowym\nKabestany 2 biegowe\nSter strumieniowy',
+			'Szprycbuda\n2 Koła sterowe\nStół w kokpicie\nSiedziska kokpitu wyłożone drzewem tekowym\n2 Kabestany biegowe\nSter strumieniowy',
 		theme: 'dark',
 	},
 	{
 		title: 'Bezpieczeństwo',
 		content:
-			'Kamizelki ratunkowe pneumatyczne 8 szt\nKamizelki ratunkowe pneumatyczne dziecięce 2 szt\nLife liny\nKoło ratunkowe z pławą świetlną\nPneumatyczna tratwa ratunkowa\nRadiopława naprowadzająca EPIRB\nZestaw pirotechniki do wzywania pomocy\nReflektor radarowy\nTyczka MOB pneumatyczna',
+			'Kamizelki ratunkowe pneumatyczne 6 szt\nKamizelki ratunkowe SOLAS 4 szt\nLife liny\nKoło ratunkowe z pławą świetlną\nPneumatyczna tratwa ratunkowa\nRadiopława naprowadzająca EPIRB\nZestaw pirotechniki do wzywania pomocy\nReflektor radarowy\nTyczka MOB pneumatyczna',
 		theme: 'light',
 	},
 	{
 		title: 'Wnętrze',
 		content:
-			'Ogrzewanie nadmuchowe - WEBASTO\nStolik nawigacyjny\nWentylacja na lukach w salonie\nKuchenka gazowa 2 palnikowa, piekarnik gazowy\nlodówka otwierana od góry  w kambuzie\ntoaleta z prysznicem\nZlew, prysznic i umywalka z ciepłą wodą\nRęczna i automatyczna pompa zęzowa',
+			'Stolik nawigacyjny\nWentylacja w mesie\nKuchenka gazowa 2 palnikowa, piekarnik gazowy\nLodówka otwierana od góry w kambuzie\nToaleta z prysznicem\nZlew, prysznic i umywalka z ciepłą wodą\nRęczna i automatyczna pompa zęzowa',
 		theme: 'dark',
 	},
 	{
 		title: 'Żagle',
-		content:
-			'Grot  rolowany w maszcie\nGenua rolowana na sztagu\nGazowy obciągacz bomu',
+		content: 'Grot z 2 refami\nGenua rolowana na sztagu\nObciągacz bomu',
 		theme: 'light',
 	},
 ];
@@ -65,7 +64,12 @@ const Specifications: FC = () => {
 					))}
 				</div>
 				<div className='specs-image-container'>
-					<img src={IMAGES.bloc2} alt='Yacht Plan' className='specs-image' loading='lazy' />
+					<img
+						src={IMAGES.bloc2}
+						alt='Yacht Plan'
+						className='specs-image'
+						loading='lazy'
+					/>
 				</div>
 			</div>
 		</section>

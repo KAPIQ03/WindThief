@@ -33,7 +33,7 @@ const Separation = ({ images }: SeparationProps) => {
 					left: 0,
 					width: '100%',
 					height: '140%',
-					backgroundImage: `url(${images})`,
+					backgroundImage: `linear-gradient(rgba(0, 0, 0 ,0) 50%, rgba(0,0,0,0.6)),url(${images})`,
 					backgroundSize: 'cover',
 					backgroundPosition: 'center',
 					y,
